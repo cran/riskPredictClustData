@@ -1,0 +1,11 @@
+8fa52313ffd4e4085b66b59676c2bd0f *DESCRIPTION
+196b4a995e998489ae004fb4c5bc20da *NAMESPACE
+07bbc2fd90b4acc1aa66e8f022ed59d1 *NEWS
+992ba6b887dfcf57f0c95a9cd73da6cd *R/functions.R
+db84b2749a944f1c42f58d98262c6f5e *R/genSimGLMEM.R
+a545e1e3855ad5dacffd8a755f40b56d *man/genSimDataGLMEM.Rd
+8b3189b6f2654657cc3194556d9a7290 *man/getScore.Rd
+f44b5051bfcae2d8a95555c9cff98619 *man/powerCal.Rd
+82a83ba7aaa24476e59f2ac59b73cd4f *man/powerCalData.Rd
+f160c6587b552b1feb7e31127b1801ad *man/riskPredict.Rd
+3603899454fa2c99d6624888a51ba380 *man/riskPredictDiff.Rd

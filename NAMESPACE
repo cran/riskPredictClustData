@@ -1,0 +1,34 @@
+export(
+  genSimDataGLMEM,
+  getScore,
+  powerCal,
+  powerCalData,
+  riskPredict,
+  riskPredictDiff
+)
+
+S3method(summary, "class.riskPredict")
+S3method(summary, "class.riskPredictDiff")
+
+S3method(print, "class.riskPredict")
+S3method(print, "class.riskPredictDiff")
+
+importFrom(MASS,
+  mvrnorm
+)
+
+importFrom(mvtnorm,
+  pmvnorm
+)
+
+importFrom(Hmisc,
+  rMultinom
+)
+
+importFrom("stats", "aov", "optim", "pnorm", "qnorm", "dnorm", "cor", "binomial")
+importFrom("stats", "rnorm")
+#importFrom("stats", "gaussian", "model.extract", "model.matrix")
+
+importFrom("gee", "gee")
+
+importFrom("utils", "capture.output")

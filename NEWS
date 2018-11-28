@@ -1,0 +1,88 @@
+v0.2.6 created on Nov. 18, 2018
+  (1) added reference in 'Description' field of 'DESCRIPTION' file
+  (2) remove \dontrun{} and donttest{} and revised examples so that each example can be executed in < 5 sec
+v0.2.5 created on Sept 2, 2018
+  (1) replace Weiliang Qiu's email address from stwxq@channing.harvard.edu to
+      weiliang.qiu@gmail.com
+  (2) use 'Authors@R' in DESCRIPTION file
+v0.2.4 created on Sept 2, 2018
+  (1) double check the package use the latest version of R 3.5.1
+v0.2.3 created on June 21, 2018
+  (1) set the number of clusters as 50 in examples
+v0.2.2 created on June 13, 2018
+  (1) remove row names after create data frame in simulated data
+  (2) output regression coefficient of GEE in the 'getScore' function
+  (3) write a power calculation function so that the user can input pilot data to obtain parameter estimates
+
+v0.2.1 created on March 29, 2018
+  (1) simplify the function 'getScore' a little to drop the output 'id'
+
+v0.2.0 created on March 21, 2018
+  (1) fixed a typo: 'taht' should be 'that' in 'powerCal.Rd'
+
+v0.1.9 created on March 7, 2018
+  (1) change 'sid' to 'cid'
+  (2) change 'uid' to 'subuid'
+  (3) change 'value' to 'score'
+
+v0.1.8 created on Feb. 28, 2018
+  (1) sort simulated data by uid and sid
+v0.1.7 created on Feb. 01, 2018
+  (1) remove some unrelated intermediate outputs
+
+v0.1.6 created on Dec. 28, 2017
+  (1) In 'genSimDataGLMEM', set the default values: beta0=-6
+  
+v0.1.5 created on May 18, 2017
+  (1) remove the input 'theta1' from the function 'powerCal'
+  (2) update the mannual for 'powerCal'
+v0.1.4 created on May 3, 2017
+  (1) simplify code, e.g. reduce the number of calcuations for ci, di
+  (2) renmae 'getFrame' to 'getScore'
+  (3) drop some output functions. Keep only functions:
+       genSimDataGLMEM, getScore, powerCal, riskPredict, riskPredictDiff
+
+v0.1.3 created on May 3, 2017
+  (1) add function 'genSimDataGLMEM'
+
+v0.1.2 created on April 25, 2017
+  (1) add summary.riskPredict and summary.riskPredictDiff 
+      for 'riskPredict' and 'riskPredictDiff'
+  (2) fixed a bug in 'genDat12': in paste statement, "\n" should be
+      sep="" 
+  (3) add output E.stat.Ha and E.diff.Ha
+  (4) revised the construction of 95% CI for eta_c to make sure
+      95% CI is within the interval (0, 1)
+  (5) use 'cov' instead of 'cor', otherwise for some case,
+      corMat in calculation Cov(A1, A2) will not be a correlation matrix
+
+v0.1.1 created on April 13, 2017
+  (1) suppress the output of gee
+  (2) add 'verbose' input option for 'getFrame'
+  (3) output 95% CI
+v0.1.0 created on April 12, 2017
+  (1) add GEE wrapper function
+
+v0.0.9 created on March 22, 2017
+  (1) optimize Tstat.func and genDelta2
+
+v0.0.8 created on Feb. 27, 2017
+#  (1) fixed a bug in riskPredict: z = (stat - 0.5)/se.stat
+v0.0.7 created on Feb. 23, 2017
+  (1) exclude Tstat.func from NAMESPACE
+
+v0.0.6 created on Feb. 23, 2017
+  (1) add function 'riskPredict' and 'riskPredictDiff'
+  (2) put genDelta inside genDat1 
+  (3) put genDelta2 inside genDat12
+
+v0.0.5 created on Feb. 23, 2017
+  (1) add manual for genDat1 and genDat12
+
+v0.0.3 created on Feb. 1, 2017
+  (1) dropped 'eCDF.func'
+  (2) in function 'genDelta', replace "rep=TRUE" by "replace=TRUE"
+
+v0.0.2 created on Feb. 1, 2017
+  (1) added "importFrom("stats", "aov", "optim", "pnorm", "qnorm")" to NAMESPACE
+  (2) added 'genDelta', 'genDelta2'
